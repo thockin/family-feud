@@ -94,7 +94,7 @@ const ioHandler = (req, res) => {
       registeredPlayers: {},
       buzzed: [],
       settings: {
-        logo_url: null,
+        logo_url: `/title-kubecon.svg`,
         hide_questions: true,
         theme: "default",
         final_round_title: null,
