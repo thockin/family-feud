@@ -37,7 +37,7 @@ function TeamControls(props) {
     <>
       <button
         disabled={props.pointsGivin.state}
-        className={`border-4 text-2xl ${props.pointsGivin.color} rounded p-10 ${props.pointsGivin.textColor}`}
+        className={`border-4 text-2xl ${props.pointsGivin.color} rounded p-2 ${props.pointsGivin.textColor}`}
         onClick={() => {
           props.game.teams[props.team].points =
             props.game.point_tracker[props.game.round] +
@@ -51,11 +51,11 @@ function TeamControls(props) {
           props.send({ action: "data", data: props.game });
         }}
       >
-        {t("team")} {t("number", { count: props.team + 1 })}:{" "}
+        {t("team")}{" "}
         {props.game.teams[props.team].name} {t("Gets Points")}
       </button>
       <button
-        className="border-4 bg-failure-500 text-2xl rounded p-10 text-foreground"
+        className="border-4 bg-failure-500 text-2xl rounded p-2 text-foreground"
         onClick={() => {
           if (props.game.teams[props.team].mistakes < 3)
             props.game.teams[props.team].mistakes++;
@@ -67,7 +67,7 @@ function TeamControls(props) {
           });
         }}
       >
-        {t("team")} {t("number", { count: props.team + 1 })}:{" "}
+        {t("team")}{" "}
         {props.game.teams[props.team].name} {t("mistake")}
       </button>
     </>
@@ -590,7 +590,7 @@ export default function Admin(props) {
         </div>
 
         <hr className="my-12" />
-        <div className="flex flex-col items-center space-y-5">
+        <div className="flex flex-col items-center space-y-3">
           <div className="grid grid-cols-2 gap-y-10 gap-x-48">
             <div className="flex flex-row justify-between space-x-5">
               {/* TITLE TEXT INPUT */}
@@ -703,7 +703,7 @@ export default function Admin(props) {
                 <div className="flex flex-row space-x-10 flex-grow">
                   {/* TITLE SCREEN BUTTON */}
                   <button
-                    className="border-4 rounded p-10 text-2xl flex-grow bg-secondary-300 text-foreground"
+                    className="border-4 rounded p-2 text-2xl flex-grow bg-secondary-300 text-foreground"
                     onClick={() => {
                       game.title = true;
                       game.round = 0;
@@ -719,7 +719,7 @@ export default function Admin(props) {
                   {/* FINAL ROUND BUTTON */}
                   {game.final_round ? (
                     <button
-                      className="border-4 rounded p-10 text-2xl flex-grow bg-secondary-300 text-foreground"
+                      className="border-4 rounded p-2 text-2xl flex-grow bg-secondary-300 text-foreground"
                       onClick={() => {
                         game.title = false;
                         game.is_final_round = true;
@@ -738,7 +738,7 @@ export default function Admin(props) {
 
                   {/* ROUND SELECTOR */}
                   <select
-                    className="border-4 rounded p-10 text-2xl flex-grow bg-secondary-300 text-foreground"
+                    className="border-4 rounded p-2 text-2xl flex-grow bg-secondary-300 text-foreground"
                     value={game.round}
                     onChange={(e) => {
                       game.round = parseInt(e.target.value);
@@ -766,7 +766,7 @@ export default function Admin(props) {
                 {/* START ROUND 1 BUTTON */}
                 <div className="flex flex-row space-x-10">
                   <button
-                    className="border-4 rounded p-10 flex-grow text-2xl bg-secondary-300 text-foreground"
+                    className="border-4 rounded p-2 flex-grow text-2xl bg-secondary-300 text-foreground"
                     onClick={() => {
                       game.title = false;
                       game.is_final_round = false;
@@ -788,7 +788,7 @@ export default function Admin(props) {
 
                   {/* NEXT ROUND BUTTON */}
                   <button
-                    className="border-4 rounded p-10 flex-grow text-2xl bg-secondary-300 text-foreground"
+                    className="border-4 rounded p-2 flex-grow text-2xl bg-secondary-300 text-foreground"
                     onClick={() => {
                       game.title = false;
                       game.is_final_round = false;
@@ -810,16 +810,20 @@ export default function Admin(props) {
                   >
                     {t("Next Round")}
                   </button>
+
+                  {/* STRIKE BUTTON */}
                   <button
-                    className="border-4 rounded p-10 flex-grow text-2xl bg-secondary-300 text-foreground flex flex-row justify-center items-center"
+                    className="border-4 rounded p-2 flex-grow text-2xl bg-secondary-300 text-foreground flex flex-row justify-center items-center"
                     onClick={() => {
                       send({ action: "show_mistake" });
                     }}
                   >
-                    <img className={`w-3/12`} src="x.svg" />
+                    {t("Mistake")}
                   </button>
+
+                  {/* RESET STRIKES */}
                   <button
-                    className="border-4 rounded p-10 flex-grow text-2xl bg-secondary-300 text-foreground"
+                    className="border-4 rounded p-2 flex-grow text-2xl bg-secondary-300 text-foreground"
                     onClick={() => {
                       for (let team in props.game.teams) {
                         props.game.teams[team].mistakes = 0;
@@ -873,28 +877,6 @@ export default function Admin(props) {
                           {t("number", { count: game.point_tracker[game.round] })}
                         </h3>
                       </div>
-                      <div className="flex flex-row space-x-2 items-center">
-                        <h3 className="text-xl text-foreground">
-                          {t("multiplier")}:{" "}
-                        </h3>
-                        <h3 className="text-2xl text-foreground">x</h3>
-                        <input
-                          type="number"
-                          min="1"
-                          className="p-1 border-2 w-24 bg-secondary-200 text-foreground placeholder-secondary-900"
-                          value={current_round.multiply}
-                          placeholder={t("multiplier")}
-                          onChange={(e) => {
-                            let value = parseInt(e.target.value);
-                            if (value === 0) {
-                              value = 1;
-                            }
-                            current_round.multiply = value;
-                            props.setGame((prv) => ({ ...prv }));
-                            send({ action: "data", data: game });
-                          }}
-                        />
-                      </div>
                     </div>
                   </div>
 
@@ -907,7 +889,7 @@ export default function Admin(props) {
                           } font-extrabold uppercase rounded border-2 text-2xl rounded `}
                       >
                         <button
-                          className="flex flex-row p-5 justify-center min-h-full items-center min-w-full"
+                          className="flex flex-row p-3 justify-center min-h-full items-center min-w-full"
                           onClick={() => {
                             x.trig = !x.trig;
                             props.setGame((prv) => ({ ...prv }));
