@@ -592,31 +592,6 @@ export default function Admin(props) {
         <hr className="my-12" />
         <div className="flex flex-col items-center space-y-3">
           <div className="grid grid-cols-2 gap-y-10 gap-x-48">
-            <div className="flex flex-row justify-between space-x-5">
-              {/* TITLE TEXT INPUT */}
-              <div className="flex flex-row space-x-5 items-center">
-                <p className="text-2xl text-foreground">{t("Title Text")}:</p>
-                <input
-                  className="border-4 rounded text-2xl w-44 bg-secondary-500 text-foreground p-1 placeholder-secondary-900"
-                  onChange={debounce((e) => {
-                    game.title_text = e.target.value;
-                    props.setGame((prv) => ({ ...prv }));
-                    send({ action: "data", data: game });
-                  })}
-                  placeholder={t("My Family")}
-                  defaultValue={game.title_text}
-                ></input>
-              </div>
-            </div>
-            <TitleLogoUpload
-              send={bsonSend}
-              room={props.room}
-              setGame={props.setGame}
-              game={game}
-              setError={setError}
-              setImageUploaded={setImageUploaded}
-              imageUploaded={imageUploaded}
-            />
             <div className="w-80 flex-row items-center space-x-1">
               {/* TEAM 1 NAME CHANGER */}
               <input
