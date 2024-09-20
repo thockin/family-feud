@@ -672,26 +672,6 @@ export default function Admin(props) {
                     {t("Title Card")}
                   </button>
 
-                  {/* FINAL ROUND BUTTON */}
-                  {game.final_round ? (
-                    <button
-                      className="border-4 rounded p-2 text-2xl flex-grow bg-secondary-300 text-foreground"
-                      onClick={() => {
-                        game.title = false;
-                        game.is_final_round = true;
-                        game.is_final_second = false;
-                        props.setGame((prv) => ({ ...prv }));
-                        send({ action: "data", data: game });
-                        send({
-                          action: "set_timer",
-                          data: game.final_round_timers[0],
-                        });
-                      }}
-                    >
-                      {t("Final Round")}
-                    </button>
-                  ) : null}
-
                   {/* ROUND SELECTOR */}
                   <select
                     className="border-4 rounded p-2 text-2xl flex-grow bg-secondary-300 text-foreground"
