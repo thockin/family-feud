@@ -471,13 +471,6 @@ export default function Admin(props) {
                 </div>
               </button>
             </a>
-            <a href="/new">
-              <button className="text-2xl">
-                <div className="w-48 hover:shadow-md rounded bg-primary-200 p-2 flex justify-center">
-                  {t("Create New Game")}
-                </div>
-              </button>
-            </a>
             <button
               className="text-2xl"
               onClick={() => {
