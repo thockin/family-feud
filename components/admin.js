@@ -638,10 +638,6 @@ export default function Admin(props) {
           <p className="text-xl text-failure-700">{error}</p>
         </div>
         <hr className="my-12" />
-        {/* ADMIN CONTROLS */}
-        <div className="flex flex-col items-center">
-          <AdminSettings game={game} setGame={props.setGame} send={send} />
-        </div>
         {/* SHOW ERRORS TO ADMIN */}
         {game.rounds == null ? (
           <p className="text-2xl text-center py-20 text-secondary-900">
