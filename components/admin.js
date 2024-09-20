@@ -646,14 +646,13 @@ export default function Admin(props) {
         ) : (
             <div>
               <div className="flex-col space-y-5 p-5">
-                <hr />
                 <div className="flex flex-row justify-evenly items-baseline">
-                  <TitleMusic />
                   {/* CURRENT SCREEN TEXT */}
                   <p className="text-2xl text-center pt-5 text-foreground">
                     {" "}
                     {t("Current Screen")}: {current_screen}
                   </p>
+                  <TitleMusic />
                 </div>
 
                 <div className="flex flex-row space-x-10 flex-grow">
