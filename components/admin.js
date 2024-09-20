@@ -481,14 +481,6 @@ export default function Admin(props) {
                 {t("Quit")}
               </div>
             </button>
-          </div>
-          <div className="flex flex-row justify-evenly items-center m-5">
-            <LanguageSwitcher
-              onChange={(e) => {
-                i18n.changeLanguage(e.target.value);
-                send({ action: "change_lang", data: e.target.value });
-              }}
-            />
             {/* START GAME LOADER */}
             <div className="flex flex-col border-2  rounded">
               <div className="justify-center flex flex-row  space-x-5 p-2 items-center transform translate-y-3">
