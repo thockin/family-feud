@@ -458,11 +458,11 @@ export default function Admin(props) {
       >
         <div className="min-h-full">
           {/* ROOM CODE TEXT */}
-          <p className="text-center text-8xl p-4 font-semibold uppercase text-foreground">
+          <p className="text-center text-8xl p-2 font-semibold uppercase text-foreground">
             {props.room}
           </p>
           <hr />
-          <div className="flex flex-row justify-evenly p-5 ">
+          <div className="flex flex-row justify-evenly p-2 ">
             {/* ADMIN BUTTONS */}
             <a href="/game" target="_blank">
               <button className="text-2xl">
@@ -574,8 +574,8 @@ export default function Admin(props) {
           {/* END GAME LOADER */}
         </div>
 
-        <hr className="my-12" />
-        <div className="flex flex-col items-center space-y-3">
+        <hr />
+        <div className="flex flex-col items-center p-2">
           <div className="grid grid-cols-2 gap-y-10 gap-x-48">
             <div className="w-80 flex-row items-center space-x-1">
               {/* TEAM 1 NAME CHANGER */}
@@ -637,7 +637,7 @@ export default function Admin(props) {
           </div>
           <p className="text-xl text-failure-700">{error}</p>
         </div>
-        <hr className="my-12" />
+        <hr />
         {/* SHOW ERRORS TO ADMIN */}
         {game.rounds == null ? (
           <p className="text-2xl text-center py-20 text-secondary-900">
@@ -645,7 +645,7 @@ export default function Admin(props) {
           </p>
         ) : (
             <div>
-              <div className="flex-col space-y-5 p-5">
+              <div className="flex-col space-y-3 p-2">
                 <div className="flex flex-row justify-evenly items-baseline">
                   {/* CURRENT SCREEN TEXT */}
                   <p className="text-2xl text-center pt-5 text-foreground">
@@ -772,7 +772,7 @@ export default function Admin(props) {
                 </div>
 
                 {/* GETS POINTS MISTAKE */}
-                <div className="grid grid-rows-2 grid-flow-col gap-5">
+                <div className="grid grid-rows-2 grid-flow-col gap-3">
                   <TeamControls
                     game={game}
                     setGame={props.setGame}
@@ -857,7 +857,7 @@ export default function Admin(props) {
                   </div>
 
                   {/* BUZZERS AND PLAYERS */}
-                  <div className="grid grid-cols-2 gap-4 p-5">
+                  <div className="grid grid-cols-2 gap-3 p-1">
                     <h1 className="text-2xl capitalize text-foreground">
                       {t("Buzzer Order")}
                     </h1>
