@@ -388,6 +388,15 @@ export default function Admin(props) {
     ws.current.send(BSON.serialize(data));
   }
 
+  if (!game.loaded) {
+    console.debug("loading default game file");
+    send({
+      action: "load_game",
+      file: "themed/kubernetes.json",
+      lang: i18n.language,
+     });
+  }
+
   useEffect(() => {
     setInterval(() => {
       if (ws.current.readyState !== 1) {
@@ -481,97 +490,7 @@ export default function Admin(props) {
                 {t("Quit")}
               </div>
             </button>
-            {/* START GAME LOADER */}
-            <div className="flex flex-col border-2  rounded">
-              <div className="justify-center flex flex-row  space-x-5 p-2 items-center transform translate-y-3">
-                {gameSelector.length > 0 ? (
-                  <select
-                    className="border-2 rounded bg-secondary-500 text-foreground"
-                    onChange={(e) => {
-                      send({
-                        action: "load_game",
-                        file: e.target.value,
-                        lang: i18n.language,
-                      });
-                    }}
-                  >
-                    <option disabled selected value></option>
-                    {gameSelector.map((value, index) => (
-                      <option key={index} value={value}>
-                        {value.replace(".json", "")}
-                      </option>
-                    ))}
-                  </select>
-                ) : null}
-                <div className="image-upload w-6">
-                  <label htmlFor="gamePicker">
-                    <svg
-                      className="fill-current text-secondary-900 hover:text-secondary-500 cursor-pointer"
-                      viewBox="0 0 384 512"
-                    >
-                      <path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm65.18 216.01H224v80c0 8.84-7.16 16-16 16h-32c-8.84 0-16-7.16-16-16v-80H94.82c-14.28 0-21.41-17.29-11.27-27.36l96.42-95.7c6.65-6.61 17.39-6.61 24.04 0l96.42 95.7c10.15 10.07 3.03 27.36-11.25 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z" />
-                    </svg>
-                  </label>
-                  <input
-                    className="hidden"
-                    type="file"
-                    accept=".json, .csv"
-                    id="gamePicker"
-                    onChange={(e) => {
-                      var file = document.getElementById("gamePicker").files[0];
-                      console.debug(file);
-                      if (file?.type === "application/json") {
-                        if (file) {
-                          var reader = new FileReader();
-                          reader.readAsText(file, "utf-8");
-                          reader.onload = function(evt) {
-                            let data = JSON.parse(evt.target.result);
-                            console.debug(data);
-                            // TODO some error checking for invalid game data
-                            send({ action: "load_game", data: data });
-                          };
-                          reader.onerror = function(evt) {
-                            console.error("error reading file");
-                            setError(t("error reading file"));
-                          };
-                        }
-                      } else if (file?.type === "text/csv") {
-                        var reader = new FileReader();
-                        reader.readAsText(file, "utf-8");
-                        reader.onload = function(evt) {
-                          let lineCount = evt.target.result.split("\n");
-                          if (lineCount.length > 30) {
-                            setError(t("This csv file is too large"));
-                          } else {
-                            setCsvFileUpload(file);
-                            setCsvFileUploadText(evt.target.result);
-                          }
-                        };
-                        reader.onerror = function(evt) {
-                          console.error("error reading file");
-                          setError(t("error reading file"));
-                        };
-                      } else {
-                        setError(t("Unknown file type in game load"));
-                      }
-                      // allow same file to be selected again
-                      document.getElementById("gamePicker").value = null;
-                    }}
-                  />
-                </div>
-              </div>
-              <div className="flex flex-row">
-                <span className="translate-x-3 px-2 text-foreground flex-shrink inline translate-y-3 transform bg-background ">
-                  {t("Load Game")}
-                </span>
-                <span className="translate-x-3 px-2 text-secondary-900 flex-shrink inline translate-y-3 transform bg-background ">
-                  {t(".json, .csv")}
-                </span>
-                <div className="flex-grow" />
-              </div>
-            </div>
           </div>
-          {/* END GAME LOADER */}
         </div>
 
         <hr />

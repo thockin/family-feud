@@ -91,6 +91,7 @@ const ioHandler = (req, res) => {
     // TODO instead of storing game data in memory, this should be stored to disk or redis
     let rooms = {};
     let game = {
+      loaded: false,
       registeredPlayers: {},
       buzzed: [],
       settings: {
@@ -216,6 +217,7 @@ const ioHandler = (req, res) => {
             let loadGameData = loadGame.addGameKeys(message.data);
 
             let game = rooms[message.room].game;
+            game.loaded = true;
             game.teams[0].points = 0;
             game.teams[1].points = 0;
             game.round = 0;
@@ -233,7 +235,7 @@ const ioHandler = (req, res) => {
             );
           } else if (message.action === "host_room") {
             // loop until we find an available room code
-            let roomCode = makeRoom();
+            let roomCode = "KUBE";
             while (rooms[roomCode]) {
               roomCode = makeRoom();
             }
