@@ -1,7 +1,7 @@
 export default function TeamName(props) {
   return (
     <div
-      className="text-3xl flex flex-col text-center space-y-2"
+      className="text-4xl flex flex-col text-center space-y-2"
       style={{
         minWidth: 0,
       }}
