@@ -173,19 +173,7 @@ export default function Game(props) {
     }
     return (
       <>
-        {!isHost ? (
-          <div className="w-screen flex flex-col items-end absolute">
-            <button
-              className="shadow-md rounded-lg m-1 p-2 bg-secondary-500 hover:bg-secondary-200 font-bold uppercase"
-              onClick={() => {
-                cookieCutter.set("session", "");
-                window.location.href = "/";
-              }}
-            >
-              {t("quit")}
-            </button>
-          </div>
-        ) : null}
+        {null}
         <div className="min-h-screen absolute w-screen flex flex-col items-center justify-center pointer-events-none">
           <img
             className={`w-4/12 ${showMistake ? "opacity-90" : "opacity-0"} transition-opacity ease-in-out duration-300`}
