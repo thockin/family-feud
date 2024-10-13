@@ -847,7 +847,7 @@ export default function Admin(props) {
                             send({ action: "data", data: game });
                           }}
                         >
-                          <div className="flex-grow">{x.ans}</div>
+                          <div className="flex-grow">{x.ans}{x.alt ? " (" + x.alt + ")" : ""}</div>
                           <div className="p-2">
                             {t("number", { count: x.pnt })}
                           </div>

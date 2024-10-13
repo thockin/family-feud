@@ -1,1 +1,77 @@
-{"settings":{},"rounds":[{"question":"Name an error you might see in Kubernetes?","answers":[{"ans":"CrashLoopBackoff","pnt":45},{"ans":"ImagePullBackoff","pnt":22},{"ans":"Insufficient CPU","pnt":8},{"ans":"Are you sure you have the right port?","pnt":3}],"multiply":1},{"question":"On a scale of 1 to 10, how much do you love YAML?","answers":[{"ans":"0","pnt":44},{"ans":"1","pnt":33},{"ans":"7","pnt":22},{"ans":"11","pnt":11}],"multiply":1}],"final_round":[{"question":"Question 1","answers":[]},{"question":"Question 2","answers":[]},{"question":"Question 3","answers":[]},{"question":"Question 4","answers":[]},{"question":"Question 5","answers":[]}],"final_round_timers":[20,25]}
+{
+  "settings": {},
+  "rounds": [
+    {
+      "question": "Name an error you might see in Kubernetes?",
+      "answers": [
+        {
+          "ans": "CrashLoopBackoff",
+          "pnt": 45
+        },
+        {
+          "ans": "ImagePullBackoff",
+          "pnt": 22
+        },
+        {
+          "ans": "Insufficient CPU",
+          "alt": "/ not enough CPU",
+          "pnt": 8
+        },
+        {
+          "ans": "Are you sure you have the right port?",
+          "pnt": 3
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "question": "On a scale of 1 to 10, how much do you love YAML?",
+      "answers": [
+        {
+          "ans": "0",
+          "pnt": 44
+        },
+        {
+          "ans": "1",
+          "pnt": 33
+        },
+        {
+          "ans": "7",
+          "pnt": 22
+        },
+        {
+          "ans": "11",
+          "alt": "/ more than 10",
+          "pnt": 11
+        }
+      ],
+      "multiply": 1
+    }
+  ],
+  "final_round": [
+    {
+      "question": "Question 1",
+      "answers": []
+    },
+    {
+      "question": "Question 2",
+      "answers": []
+    },
+    {
+      "question": "Question 3",
+      "answers": []
+    },
+    {
+      "question": "Question 4",
+      "answers": []
+    },
+    {
+      "question": "Question 5",
+      "answers": []
+    }
+  ],
+  "final_round_timers": [
+    20,
+    25
+  ]
+}
