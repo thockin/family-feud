@@ -14,7 +14,7 @@
   "name": "Name",
   "Create New Game": "Create New Game",
   "Next Round": "Start Next Round",
-  "Mistake": "Play Strike",
+  "Mistake": "Play Strike (no team)",
   "Reset Mistakes": "Reset Team Strikes",
   "number": "{{count, number}}",
   "part two": "PT2",
