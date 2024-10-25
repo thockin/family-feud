@@ -56,7 +56,6 @@ export default function CreateGame(props) {
         <div className="py-10 flex-col space-y-5">
           <div className="flex flex-row space-x-5 items-center">
             <p className="text-foreground">{t("language")}:</p>
-            <LanguageSwitcher />
             <ThemeSwitcher
               game={theme}
               setGame={setTheme}

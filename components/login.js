@@ -8,9 +8,6 @@ export default function Login(props) {
   const { t } = useTranslation();
   return (
     <>
-      <div className="self-end">
-        <LanguageSwitcher />
-      </div>
       <TitleLogo insert="" />
       <div className="flex flex-col">
         <div className="flex flex-row justify-between text-1xl px-2">
