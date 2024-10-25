@@ -1,0 +1,6 @@
+FROM gcr.io/thockin-joonix-dev/famf-base:latest
+
+RUN mkdir -p /src/games/en
+COPY game-practice.json /src/games/en/kube-practice.json
+COPY game-short.json    /src/games/en/kube-short.json
+COPY game-long.json     /src/games/en/kube-long.json
