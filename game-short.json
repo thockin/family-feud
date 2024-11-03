@@ -1,0 +1,293 @@
+{
+  "settings": {},
+  "rounds": [
+    {
+      "qnumber": 1,
+      "question": "Name an error you might see in Kubernetes.",
+      "answers": [
+        {
+          "ans": "CrashLoopBackOff",
+          "pnt": 37
+        },
+        {
+          "ans": "ImagePullBackOff",
+          "pnt": 20
+        },
+        {
+          "ans": "OOM Killed",
+          "alt": "out of memory",
+          "pnt": 6
+        },
+        {
+          "ans": "context deadline exceeded",
+          "pnt": 5
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 2,
+      "question": "What is the biggest risk to Kubernetes and Cloud Native?",
+      "answers": [
+        {
+          "ans": "Lack of innovation",
+          "alt": "unresponsive / innovator's dilemma / stagnation",
+          "pnt": 30
+        },
+        {
+          "ans": "Complexity",
+          "alt": "friction / hard to use",
+          "pnt": 15
+        },
+        {
+          "ans": "Cloud providers / lock-in",
+          "alt": "vendors",
+          "pnt": 12
+        },
+        {
+          "ans": "AI",
+          "alt": "ML / AI workloads",
+          "pnt": 12
+        },
+        {
+          "ans": "Lack of maintainers",
+          "alt": "community decline",
+          "pnt": 8
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 3,
+      "question": "How do you pronounce the name of the Kubernetes command-line tool?",
+      "answers": [
+        {
+          "ans": "\"Kyoob-See-Tee-Ell\"",
+          "pnt": 51
+        },
+        {
+          "ans": "\"Kyoob-cuttle\"",
+          "alt": "or cuddle",
+          "pnt": 38
+        },
+        {
+          "ans": "\"Kyoob control\"",
+          "pnt": 17
+        },
+        {
+          "ans": "\"Koob-cuttle\"",
+          "alt": "or cuddle",
+          "pnt": 5
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 4,
+      "question": "What is the best feature in Kubernetes?",
+      "answers": [
+        {
+          "ans": "Custom Resources",
+          "alt": "CRDs",
+          "pnt": 19
+        },
+        {
+          "ans": "The control plane",
+          "alt": "API machinery",
+          "pnt": 14
+        },
+        {
+          "ans": "Controllers + declarative",
+          "alt": "state reconciliation",
+          "pnt": 13
+        },
+        {
+          "ans": "Pods",
+          "pnt": 9
+        },
+        {
+          "ans": "The community",
+          "pnt": 7
+        },
+        {
+          "ans": "Autoscaling",
+          "pnt": 5
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 5,
+      "question": "Name a barrier to adoption of Kubernetes that has largely been overcome?",
+      "answers": [
+        {
+          "ans": "Cluster lifecycle",
+          "alt": "Installation",
+          "pnt": 15
+        },
+        {
+          "ans": "Cloud provider support",
+          "alt": "managed clusters",
+          "pnt": 12
+        },
+        {
+          "ans": "Hiring",
+          "alt": "expertise / knowledge",
+          "pnt": 11
+        },
+        {
+          "ans": "Reliability",
+          "alt": "production-grade / durability / quality",
+          "pnt": 10
+        },
+        {
+          "ans": "Documentation",
+          "pnt": 8
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 6,
+      "question": "Name a reason why you might build a Kubernetes cluster the hard way",
+      "answers": [
+        {
+          "ans": "To learn",
+          "alt": "figure it out / understand",
+          "pnt": 55
+        },
+        {
+          "ans": "Masochism",
+          "alt": "self-loathing",
+          "pnt": 21
+        },
+        {
+          "ans": "Kelsey Hightower",
+          "pnt": 9
+        },
+        {
+          "ans": "Custom configuration",
+          "alt": "special / consistent",
+          "pnt": 8
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 7,
+      "question": "If the Kubernetes logo were not blue, what color would it be?",
+      "answers": [
+        {
+          "ans": "Blue, but a different shade",
+          "pnt": 25
+        },
+        {
+          "ans": "Green",
+          "pnt": 24
+        },
+        {
+          "ans": "Red",
+          "pnt": 18
+        },
+        {
+          "ans": "Purple",
+          "alt": "violet",
+          "pnt": 13
+        },
+        {
+          "ans": "Black",
+          "pnt": 13
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 8,
+      "question": "If Kubernetes were an animal, what animal would it be?",
+      "answers": [
+        {
+          "ans": "Octopus",
+          "pnt": 30
+        },
+        {
+          "ans": "Elephant",
+          "pnt": 7
+        },
+        {
+          "ans": "Whale",
+          "pnt": 6
+        },
+        {
+          "ans": "Ant / ant colony",
+          "pnt": 5
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 9,
+      "question": "On a scale of 1 to 10, how much do you love YAML?",
+      "answers": [
+        {
+          "ans": "8/10",
+          "pnt": 29
+        },
+        {
+          "ans": "5/10",
+          "pnt": 23
+        },
+        {
+          "ans": "7/10",
+          "pnt": 16
+        },
+        {
+          "ans": "1/10",
+          "pnt": 14
+        },
+        {
+          "ans": "10/10",
+          "pnt": 12
+        },
+        {
+          "ans": "9/10",
+          "pnt": 11
+        },
+        {
+          "ans": "0/10",
+          "alt": "less than 0",
+          "pnt": 10
+        },
+        {
+          "ans": "11/10",
+          "alt": "more than 10",
+          "pnt": 10
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 10,
+      "question": "Name a Kubernetes object that could be a traffic sign.",
+      "answers": [
+        {
+          "ans": "Ingress",
+          "pnt": 22
+        },
+        {
+          "ans": "Endpoints",
+          "alt": "EndpointSlice",
+          "pnt": 12
+        },
+        {
+          "ans": "Pod",
+          "pnt": 7
+        },
+        {
+          "ans": "LimitRange",
+          "pnt": 7
+        }
+      ],
+      "multiply": 1
+    }
+  ]
+}

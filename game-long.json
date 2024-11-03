@@ -1,0 +1,747 @@
+{
+  "settings": {},
+  "rounds": [
+    {
+      "qnumber": 1,
+      "question": "Name an error you might see in Kubernetes.",
+      "answers": [
+        {
+          "ans": "CrashLoopBackOff",
+          "pnt": 37
+        },
+        {
+          "ans": "ImagePullBackOff",
+          "pnt": 20
+        },
+        {
+          "ans": "OOM Killed",
+          "alt": "out of memory",
+          "pnt": 6
+        },
+        {
+          "ans": "context deadline exceeded",
+          "pnt": 5
+        },
+        {
+          "ans": "object has been modified",
+          "alt": "conflict / version / RV",
+          "pnt": 4
+        },
+        {
+          "ans": "PLEG is not healthy",
+          "alt": "pod lifecycle event",
+          "pnt": 4
+        },
+        {
+          "ans": "Pending",
+          "pnt": 4
+        },
+        {
+          "ans": "Failed to create pod sandbox",
+          "pnt": 4
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 2,
+      "question": "What is the biggest risk to Kubernetes and Cloud Native?",
+      "answers": [
+        {
+          "ans": "Lack of innovation",
+          "alt": "unresponsive / innovator's dilemma / stagnation",
+          "pnt": 30
+        },
+        {
+          "ans": "Complexity",
+          "alt": "friction / hard to use",
+          "pnt": 15
+        },
+        {
+          "ans": "Cloud providers / lock-in",
+          "alt": "vendors",
+          "pnt": 12
+        },
+        {
+          "ans": "AI",
+          "alt": "ML / AI workloads",
+          "pnt": 12
+        },
+        {
+          "ans": "Lack of maintainers",
+          "alt": "community decline",
+          "pnt": 8
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 3,
+      "question": "How do you pronounce the name of the Kubernetes command-line tool?",
+      "answers": [
+        {
+          "ans": "\"Kyoob-See-Tee-Ell\"",
+          "pnt": 51
+        },
+        {
+          "ans": "\"Kyoob-cuttle\"",
+          "alt": "or cuddle",
+          "pnt": 38
+        },
+        {
+          "ans": "\"Kyoob control\"",
+          "pnt": 17
+        },
+        {
+          "ans": "\"Koob-cuttle\"",
+          "alt": "or cuddle",
+          "pnt": 5
+        },
+        {
+          "ans": "\"k\"",
+          "alt": "kay",
+          "pnt": 3
+        },
+        {
+          "ans": "\"Kub-ek-tull\"",
+          "pnt": 3
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 4,
+      "question": "What is the best feature in Kubernetes?",
+      "answers": [
+        {
+          "ans": "Custom Resources",
+          "alt": "CRDs",
+          "pnt": 19
+        },
+        {
+          "ans": "The control plane",
+          "alt": "API machinery",
+          "pnt": 14
+        },
+        {
+          "ans": "Controllers + declarative",
+          "alt": "state reconciliation",
+          "pnt": 13
+        },
+        {
+          "ans": "Pods",
+          "pnt": 9
+        },
+        {
+          "ans": "The community",
+          "pnt": 7
+        },
+        {
+          "ans": "Autoscaling",
+          "pnt": 5
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 5,
+      "question": "Name a barrier to adoption of Kubernetes that has largely been overcome?",
+      "answers": [
+        {
+          "ans": "Cluster lifecycle",
+          "alt": "Installation",
+          "pnt": 15
+        },
+        {
+          "ans": "Cloud provider support",
+          "alt": "managed clusters",
+          "pnt": 12
+        },
+        {
+          "ans": "Hiring",
+          "alt": "expertise / knowledge",
+          "pnt": 11
+        },
+        {
+          "ans": "Reliability",
+          "alt": "production-grade / durability / quality",
+          "pnt": 10
+        },
+        {
+          "ans": "Documentation",
+          "pnt": 8
+        },
+        {
+          "ans": "Complexity",
+          "alt": "difficult / hard to use",
+          "pnt": 7
+        },
+        {
+          "ans": "Storage",
+          "alt": "Stateful",
+          "pnt": 6
+        },
+        {
+          "ans": "Networking",
+          "pnt": 6
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 6,
+      "question": "Name a reason why you might build a Kubernetes cluster the hard way",
+      "answers": [
+        {
+          "ans": "To learn",
+          "alt": "figure it out / understand",
+          "pnt": 55
+        },
+        {
+          "ans": "Masochism",
+          "alt": "self-loathing",
+          "pnt": 21
+        },
+        {
+          "ans": "Kelsey Hightower",
+          "pnt": 9
+        },
+        {
+          "ans": "Custom configuration",
+          "alt": "special / consistent",
+          "pnt": 8
+        },
+        {
+          "ans": "Boredom",
+          "alt": "too much free time",
+          "pnt": 7
+        },
+        {
+          "ans": "Under duress / lost a bet",
+          "pnt": 5
+        },
+        {
+          "ans": "Sense of superiority",
+          "pnt": 5
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 7,
+      "question": "If the Kubernetes logo were not blue, what color would it be?",
+      "answers": [
+        {
+          "ans": "Blue, but a different shade",
+          "pnt": 25
+        },
+        {
+          "ans": "Green",
+          "pnt": 24
+        },
+        {
+          "ans": "Red",
+          "pnt": 18
+        },
+        {
+          "ans": "Purple",
+          "alt": "violet",
+          "pnt": 13
+        },
+        {
+          "ans": "Black",
+          "pnt": 13
+        },
+        {
+          "ans": "Orange",
+          "pnt": 9
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 8,
+      "question": "If Kubernetes were an animal, what animal would it be?",
+      "answers": [
+        {
+          "ans": "Octopus",
+          "pnt": 30
+        },
+        {
+          "ans": "Elephant",
+          "pnt": 7
+        },
+        {
+          "ans": "Whale",
+          "pnt": 6
+        },
+        {
+          "ans": "Ant / ant colony",
+          "pnt": 5
+        },
+        {
+          "ans": "Cat",
+          "pnt": 4
+        },
+        {
+          "ans": "Tortoise / turtle",
+          "alt": "world-turtle",
+          "pnt": 3
+        },
+        {
+          "ans": "Hydra",
+          "alt": "monster / multi-headed",
+          "pnt": 3
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 9,
+      "question": "On a scale of 1 to 10, how much do you love YAML?",
+      "answers": [
+        {
+          "ans": "8/10",
+          "pnt": 29
+        },
+        {
+          "ans": "5/10",
+          "pnt": 23
+        },
+        {
+          "ans": "7/10",
+          "pnt": 16
+        },
+        {
+          "ans": "1/10",
+          "pnt": 14
+        },
+        {
+          "ans": "10/10",
+          "pnt": 12
+        },
+        {
+          "ans": "9/10",
+          "pnt": 11
+        },
+        {
+          "ans": "0/10",
+          "alt": "less than 0",
+          "pnt": 10
+        },
+        {
+          "ans": "11/10",
+          "alt": "more than 10",
+          "pnt": 10
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 10,
+      "question": "Name a Kubernetes object that could be a traffic sign.",
+      "answers": [
+        {
+          "ans": "Ingress",
+          "pnt": 22
+        },
+        {
+          "ans": "Endpoints",
+          "alt": "EndpointSlice",
+          "pnt": 12
+        },
+        {
+          "ans": "Pod",
+          "pnt": 7
+        },
+        {
+          "ans": "LimitRange",
+          "pnt": 7
+        },
+        {
+          "ans": "CRD / CustomResourceDefinition",
+          "pnt": 6
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 11,
+      "question": "Name a reason NOT to use Kubernetes.",
+      "answers": [
+        {
+          "ans": "Overkill",
+          "alt": "small app / static site",
+          "pnt": 28
+        },
+        {
+          "ans": "Too complex",
+          "alt": "difficult to use",
+          "pnt": 24
+        },
+        {
+          "ans": "Wrong tool for the job",
+          "pnt": 14
+        },
+        {
+          "ans": "Lack of knowledge",
+          "alt": "fear / unqualified / hiring people",
+          "pnt": 12
+        },
+        {
+          "ans": "Your own mental health",
+          "pnt": 6
+        },
+        {
+          "ans": "Too expensive",
+          "alt": " resource hungry",
+          "pnt": 6
+        },
+        {
+          "ans": "None, you have no excuse",
+          "pnt": 5
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 12,
+      "question": "Kubernetes is 10 years old, how old will it be when it becomes self-aware?",
+      "answers": [
+        {
+          "ans": "Never",
+          "pnt": 14
+        },
+        {
+          "ans": "It already is, but doesn't want us to know",
+          "pnt": 14
+        },
+        {
+          "ans": "20 years old",
+          "pnt": 12
+        },
+        {
+          "ans": "11 years old",
+          "pnt": 8
+        },
+        {
+          "ans": "42 years old",
+          "pnt": 7
+        },
+        {
+          "ans": "13 years old",
+          "pnt": 7
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 13,
+      "question": "How many engineers does it take to manage a Kubernetes cluster?",
+      "answers": [
+        {
+          "ans": "1-2 people",
+          "pnt": 37
+        },
+        {
+          "ans": "3-4 people",
+          "pnt": 31
+        },
+        {
+          "ans": "5-8 people",
+          "pnt": 14
+        },
+        {
+          "ans": "As many as you have, maybe more",
+          "pnt": 9
+        },
+        {
+          "ans": "Less than 1, on average",
+          "pnt": 5
+        },
+        {
+          "ans": "It depends",
+          "pnt": 5
+        },
+        {
+          "ans": "More than 10 people",
+          "pnt": 5
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 14,
+      "question": "Name something you hate more than Kubernetes",
+      "answers": [
+        {
+          "ans": "Windows",
+          "pnt": 10
+        },
+        {
+          "ans": "My cloud provider",
+          "pnt": 9
+        },
+        {
+          "ans": "Politics",
+          "pnt": 8
+        },
+        {
+          "ans": "Other container solutions",
+          "alt": "other infrastructure",
+          "pnt": 7
+        },
+        {
+          "ans": "Javascript",
+          "alt": "JS frameworks / node.js",
+          "pnt": 6
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 15,
+      "question": "Name a word you would use to describe application development on Kubernetes.",
+      "answers": [
+        {
+          "ans": "Complex",
+          "alt": "complicated",
+          "pnt": 10
+        },
+        {
+          "ans": "Difficult",
+          "alt": "cumbersome / hard",
+          "pnt": 9
+        },
+        {
+          "ans": "Improving",
+          "alt": "changing / evolving",
+          "pnt": 7
+        },
+        {
+          "ans": "Chaotic",
+          "pnt": 7
+        },
+        {
+          "ans": "Work in progress",
+          "alt": "immature / WIP / basic",
+          "pnt": 6
+        },
+        {
+          "ans": "OK",
+          "pnt": 5
+        },
+        {
+          "ans": "Mature",
+          "pnt": 5
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 16,
+      "question": "Name something that should NOT be a CRD?",
+      "answers": [
+        {
+          "ans": "Anything can be a CRD if you are brave enough",
+          "alt": "nothing",
+          "pnt": 9
+        },
+        {
+          "ans": "Core Kubernetes APIs",
+          "alt": "Pods / Secrets / Services",
+          "pnt": 8
+        },
+        {
+          "ans": "CRD itself",
+          "pnt": 6
+        },
+        {
+          "ans": "Databases",
+          "pnt": 5
+        },
+        {
+          "ans": "Gateway API",
+          "pnt": 4
+        },
+        {
+          "ans": "Certificates",
+          "alt": "certificate requests",
+          "pnt": 4
+        },
+        {
+          "ans": "Application configs",
+          "alt": "simple data",
+          "pnt": 4
+        },
+        {
+          "ans": "Everything: nothing should be a CRD",
+          "pnt": 4
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 17,
+      "question": "Name a barrier to adoption of Kubernetes that has NOT been overcome?",
+      "answers": [
+        {
+          "ans": "Complexity",
+          "alt": "hard to use",
+          "pnt": 22
+        },
+        {
+          "ans": "YAML",
+          "pnt": 7
+        },
+        {
+          "ans": "Learning curve",
+          "alt": "perceived complexity",
+          "pnt": 7
+        },
+        {
+          "ans": "Troubleshooting",
+          "alt": "diagnostics / debugging / events",
+          "pnt": 6
+        },
+        {
+          "ans": "Stateful apps",
+          "pnt": 5
+        },
+        {
+          "ans": "Cost",
+          "alt": "footprint",
+          "pnt": 5
+        },
+        {
+          "ans": "Installation",
+          "alt": "cluster turnup / lifecycle",
+          "pnt": 4
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 18,
+      "question": "What is the worst feature of Kubernetes?",
+      "answers": [
+        {
+          "ans": "Complexity",
+          "alt": "debugging / troubleshooting",
+          "pnt": 10
+        },
+        {
+          "ans": "Ingress",
+          "alt": "Ingress annotations",
+          "pnt": 8
+        },
+        {
+          "ans": "YAML",
+          "pnt": 7
+        },
+        {
+          "ans": "Nothing!",
+          "pnt": 7
+        },
+        {
+          "ans": "Release frequency",
+          "alt": "upgrades / deprecations",
+          "pnt": 5
+        },
+        {
+          "ans": "Networking",
+          "alt": "NetworkPolicy",
+          "pnt": 5
+        },
+        {
+          "ans": "Cloud-specific variations",
+          "pnt": 5
+        },
+        {
+          "ans": "Admission webhooks",
+          "pnt": 5
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 19,
+      "question": "Name something you hate less than Kubernetes",
+      "answers": [
+        {
+          "ans": "Go / Golang",
+          "pnt": 14
+        },
+        {
+          "ans": "Docker",
+          "pnt": 8
+        },
+        {
+          "ans": "My family",
+          "pnt": 4
+        },
+        {
+          "ans": "Nothing: I love Kubernetes!",
+          "pnt": 3
+        },
+        {
+          "ans": "Coffee",
+          "pnt": 3
+        },
+        {
+          "ans": "Chocolate",
+          "pnt": 3
+        },
+        {
+          "ans": "Beer",
+          "pnt": 3
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "qnumber": 20,
+      "question": "If Kubernetes had a Hollywood spokesperson, who would it be?",
+      "answers": [
+        {
+          "ans": "Robert Downey Jr.",
+          "pnt": 7
+        },
+        {
+          "ans": "Keanu Reeves",
+          "pnt": 3
+        },
+        {
+          "ans": "Arnold Schwarzenegger",
+          "alt": "The Terminator",
+          "pnt": 3
+        },
+        {
+          "ans": "Tom Cruise",
+          "pnt": 2
+        },
+        {
+          "ans": "Ryan Reynolds",
+          "pnt": 2
+        },
+        {
+          "ans": "Morgan Freeman",
+          "pnt": 2
+        },
+        {
+          "ans": "Matthew McConaughey",
+          "pnt": 2
+        },
+        {
+          "ans": "Jonny Depp",
+          "pnt": 2
+        },
+        {
+          "ans": "Jim Carrey",
+          "pnt": 2
+        }
+      ],
+      "multiply": 1
+    }
+  ]
+}
