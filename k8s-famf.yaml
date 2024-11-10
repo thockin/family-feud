@@ -127,6 +127,7 @@ metadata:
   name: famf
 spec:
   domains:
+    - famf.k8s.io
     - famf.hockin.org
     - famf-frfr.hockin.org
 ---
@@ -139,6 +140,16 @@ metadata:
     networking.gke.io/managed-certificates: famf
 spec:
   rules:
+  - host: famf.k8s.io
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: famf-practice
+            port:
+              number: 80
   - host: famf.hockin.org
     http:
       paths:
