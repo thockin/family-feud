@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="9.25in"
+   height="6.75in"
+   viewBox="0 0 234.95 171.45"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="nametags_tmpl.svg"
+   inkscape:export-filename="nametags_1.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.84096521"
+     inkscape:cx="373.38049"
+     inkscape:cy="568.3945"
+     inkscape:window-width="2560"
+     inkscape:window-height="1363"
+     inkscape:window-x="0"
+     inkscape:window-y="40"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-251.09998)">
+    <rect
+       style="fill:#ffffff;stroke:#0000ff;stroke-width:5;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000;fill-opacity:1"
+       id="rect2623"
+       width="221.28645"
+       height="73.966454"
+       x="6.4505587"
+       y="256.73471" />
+    <text
+       xml:space="preserve"
+       style="font-size:50.8px;line-height:1.25;font-family:Aegean;-inkscape-font-specification:Aegean;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+       x="46.227798"
+       y="310.96454"
+       id="text3513"><tspan
+         sodipodi:role="line"
+         id="tspan3511"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:50.8px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+         x="46.227798"
+         y="310.96454">Name</tspan></text>
+    <rect
+       style="fill:#ffffff;stroke:#0000ff;stroke-width:5;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000;fill-opacity:1"
+       id="rect2623-3"
+       width="221.28645"
+       height="73.966454"
+       x="6.4505587"
+       y="342.00369" />
+    <text
+       xml:space="preserve"
+       style="font-size:50.8px;line-height:1.25;font-family:Aegean;-inkscape-font-specification:Aegean;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+       x="46.227798"
+       y="396.23352"
+       id="text3513-6"><tspan
+         sodipodi:role="line"
+         id="tspan3511-7"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:50.8px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+         x="46.227798"
+         y="396.23352">Name</tspan></text>
+  </g>
+</svg>
