@@ -66,7 +66,7 @@ const ioHandler = (req, res) => {
           if (host) {
             game.registeredPlayers[id] = "host";
             rooms[roomCode].connections[id] = ws;
-            console.debug("Registered player as host: ", id, roomCode);
+            console.debug("Registered host: ", id, roomCode);
           } else {
             game.registeredPlayers[id] = {
               role: "player",
